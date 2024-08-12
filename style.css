@@ -1,0 +1,179 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --frames-and-elements-color: #ffcb89;
+  --font-edge-color: #965a00;
+  --nav-background-color: rgba(37, 51, 15, 0.6);
+  --button-background-color: rgba(4, 45, 41, 0.6);
+  --main-font: "Roboto Condensed", sans-serif;
+  --secondary-font: "Rum Raisin", sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+/* Landing page section */
+
+.landing-page {
+  background-image: url(./img/irish_pub_interior\ 1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 1.5vh 1.5vh;
+}
+
+/* Menu icons - only for mobile */
+
+.menu-icon {
+  position: absolute;
+  top: 2vh;
+  right: 2.7vh;
+  font-size: 35px;
+  color: var(--frames-and-elements-color);
+}
+
+.menu-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Navigation */
+
+.navigation {
+  visibility: hidden; /*Přepíná se v JS*/
+  border: 1px solid var(--frames-and-elements-color);
+  background-color: var(--nav-background-color);
+  width: 100%;
+  height: 40vh;
+  display: flex;
+}
+
+.navigation-content {
+  margin: 1vh auto;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vh;
+}
+
+.navigation-content li {
+  line-height: 1.5em;
+}
+
+.navigation-content li a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--frames-and-elements-color);
+  font-size: 1.3em;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 var(--font-edge-color),
+    -1px -1px 0 var(--font-edge-color);
+}
+
+.navigation-content a:hover {
+  transition: 0.2s ease-out;
+  transform: scale(1.5);
+  color: white;
+}
+
+/* Page main title */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1vh;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title1,
+.title2 {
+  display: block;
+  color: var(--frames-and-elements-color);
+  font-size: 9vh;
+  text-shadow: 3px 3px 0 var(--font-edge-color),
+    -3px -3px 0 var(--font-edge-color);
+}
+
+.subtitle {
+  color: white;
+  font-size: 4vh;
+  font-family: var(--secondary-font);
+  text-shadow: 2px 2px 0 var(--font-edge-color),
+    -2px -2px 0 var(--font-edge-color);
+}
+
+/* Booking button */
+
+.button-box {
+  margin-top: 4.5vh;
+}
+
+.book-text {
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  font-family: var(--main-font);
+}
+
+button {
+  height: 100px;
+  width: 250px;
+  border: 1px solid var(--frames-and-elements-color);
+  border-radius: 5px;
+  background-color: var(--button-background-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e79d3c;
+}
+
+/* Social media icons */
+
+.socials-icons {
+  margin-top: 3vh;
+  display: flex;
+  gap: 3vw;
+}
+
+.socials-icons img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.fa-brands {
+  cursor: pointer;
+  font-size: 40px;
+  color: var(--frames-and-elements-color);
+}
+
+.socials-icons img:hover,
+.fa-brands:hover {
+  scale: 1.2;
+  transition: 1 ease;
+}
