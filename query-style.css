@@ -6,18 +6,6 @@
   }
 }
 
-/* Navigation - Tablet */
-
-@media (min-width: 768px) and (max-width: 1200px) {
-  .navigation {
-    justify-content: center;
-  }
-
-  .navigation-content a:hover {
-    transform: scale(1.5) !important;
-  }
-}
-
 /* Navigation - Desktop */
 
 @media (min-width: 768px) {
@@ -83,7 +71,7 @@
 
 /* Social media icons position - Desktop */
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .landing-page {
     position: relative;
   }
